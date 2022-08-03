@@ -1,0 +1,86 @@
+.spending_card_wrapper {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px 1px rgb(0 0 0 / 30%);
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: center;
+  margin-top: 20px;
+  .currency_logo {
+    flex: 0 1 auto;
+    align-self: auto;
+    margin: 0 5px 0 0;
+    background-color: #d5e6f9;
+    border-radius: 8px;
+    padding: 5px;
+    img {
+      width: 25px;
+      height: 25px;
+    }
+  }
+  .spending_details {
+    flex: 1 1 auto;
+    align-self: auto;
+    margin: 0 5px;
+    .spending_description {
+      h4 {
+        margin: 0;
+      }
+    }
+    .spending_time {
+      p {
+        margin: 0;
+        color: #7e7e7e;
+      }
+    }
+  }
+  .spending_price {
+    flex: 0 1 auto;
+    align-self: auto;
+    margin: 0 5px;
+    p {
+      margin: 0;
+      font-weight: bold;
+    }
+  }
+  .spending_btns {
+    flex: 0 1 auto;
+    align-self: auto;
+    margin: 0 0 0 5px;
+    display: flex;
+    .edit_spending {
+      margin: 0 5px 0 0;
+      background-color: #f5f7fc;
+      border-radius: 8px;
+      padding: 5px 10px;
+      border: unset;
+      cursor: pointer;
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    .delete_spending {
+      margin: 0 5px 0 0;
+      background-color: #f5f7fc;
+      border-radius: 8px;
+      padding: 5px 10px;
+      border: unset;
+      cursor: pointer;
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .spending_card_wrapper{
+    justify-content: flex-end;
+  }
+}

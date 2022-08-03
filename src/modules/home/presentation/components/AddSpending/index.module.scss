@@ -1,0 +1,100 @@
+.form_wrapper {
+  width: 100%;
+  form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: stretch;
+    align-items: stretch;
+    input:focus {
+      outline: none;
+    }
+    .description_input {
+      border: unset;
+      padding: 10px 15px;
+      background-color: #fff;
+      border-radius: 7px;
+      /* width: 300px; */
+      box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.3);
+      order: 0;
+      flex: 3 1 auto;
+      align-self: auto;
+      margin: 0 5px 0 0;
+    }
+    .currency_input {
+      border: unset;
+      padding: 10px 15px;
+      background-color: #fff;
+      border-radius: 7px;
+      /* width: 50px; */
+      box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.3);
+      order: 0;
+      flex: 0 1 auto;
+      align-self: auto;
+      margin: 0 5px;
+    }
+    .currency_input::-webkit-outer-spin-button,
+    .currency_input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    .select_wrapper {
+      order: 0;
+      flex: 0 1 auto;
+      align-self: auto;
+      margin: 0 5px;
+      select {
+        border: unset;
+        height: 100%;
+        padding: 10px 15px;
+        background-color: #fff;
+        border-radius: 7px;
+        box-shadow: 0px 0px 5px 1px rgb(0 0 0 / 30%);
+        cursor: pointer;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+      }
+    }
+    .save_btn {
+      order: 0;
+      flex: 0 1 auto;
+      align-self: auto;
+      margin: 0 0 0 5px;
+      border: unset;
+      height: 100%;
+      padding: 10px 15px;
+      color: white;
+      background-color: #53b487;
+      border-radius: 7px;
+      /* width: 50px; */
+      box-shadow: 0px 0px 5px 1px rgb(0 0 0 / 30%);
+      cursor: pointer;
+    }
+    .save_edit_btn {
+      order: 0;
+      flex: 0 1 auto;
+      align-self: auto;
+      margin: 0 0 0 5px;
+      border: unset;
+      height: 100%;
+      padding: 10px 15px;
+      color: white;
+      background-color: #006eff;
+      border-radius: 7px;
+      /* width: 50px; */
+      box-shadow: 0px 0px 5px 1px rgb(0 0 0 / 30%);
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .form_wrapper{
+    form{
+      .description_input{
+        margin-bottom: 15px;
+      }
+    }
+  }
+}

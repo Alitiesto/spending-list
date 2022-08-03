@@ -1,0 +1,20 @@
+.spendinglist_wrapper {
+  background-color: #f2f1f6;
+  display: flex;
+  min-height: 100vh;
+  align-items: flex-start;
+  .container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .spendinglist_wrapper {
+    .container {
+      width: 100%;
+      padding: 100px 15px;
+    }
+  }
+}
